@@ -47,3 +47,17 @@
 **Phase:** Preliminary / Concept Design & Tender Basis
 
 Η γεωμετρία που προκύπτει από κτηματολογικά στοιχεία και αεροφωτογραφίες είναι επαρκής για concept design. Πριν από την τελική κατασκευή θα απαιτηθεί επιτόπια επαλήθευση των κρίσιμων διαστάσεων, των θέσεων θεμελίωσης και των υπόγειων υπηρεσιών.
+
+## Parking Projects Dashboard
+
+**https://parkingprojects.markellosecosystem.com**
+
+Το dashboard αποτελεί τη web επισκόπηση του έργου **Parking Canopy Design** μέσα στην ευρύτερη ταυτότητα **Parking Projects**. Η αναλυτική τεχνική τεκμηρίωση του repository παραμένει η πηγή αλήθειας για τα δεδομένα, τις απαιτήσεις, τις παραδοχές, τις αποφάσεις και την κατάσταση του έργου.
+
+### Deployment
+
+- Hosting provider: Cloudflare Pages
+- Pages project: `parkingprojects`
+- Production branch: `main`
+- Production domain: `parkingprojects.markellosecosystem.com`
+- Deployment model: static files generated with `node scripts/build.mjs` and published from `dist/`
