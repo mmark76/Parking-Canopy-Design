@@ -60,4 +60,9 @@
 - Pages project: `parkingprojects`
 - Production branch: `main`
 - Production domain: `parkingprojects.markellosecosystem.com`
-- Deployment model: static files generated with `node scripts/build.mjs` and published from `dist/`
+- Build command: `node scripts/build.mjs`
+- Publish directory: `dist/`
+- Automated deployment: `.github/workflows/deploy-pages.yml`
+- Trigger: every push/merge to `main`, plus manual `workflow_dispatch`
+- Required GitHub repository secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
+- Deployment command: `wrangler pages deploy dist --project-name=parkingprojects --branch=main`
